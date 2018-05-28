@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/mot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nào chúng ta cùng giải phương trình bậc 2"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/hai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phương trình bậc 2 có dạng:"
+        android:layout_below="@+id/mot"
+        android:padding="10dp"
+
+        />
+    <TextView
+        android:id="@+id/ba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ax2 + bx + c = 0"
+        android:layout_below="@+id/mot"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/hai"
+        />
+
+    <EditText
+        android:id="@+id/bon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hai"
+        android:hint="Nhập A"
+
+        />
+    <EditText
+        android:id="@+id/nam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập B"
+        android:layout_below="@+id/bon"
+        />
+    <EditText
+        android:id="@+id/sau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập C"
+        android:layout_below="@+id/nam"
+        />
+    <TextView
+        android:id="@+id/bay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đáp án:"
+        android:layout_below="@+id/sau"
+        android:padding="20dp"
+        />
+    <TextView
+        android:id="@+id/tam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/sau"
+        android:padding="20dp"
+        android:layout_toRightOf="@+id/bay"
+        />
+    <Button
+        android:id="@+id/chin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giải"
+        android:layout_below="@+id/tam"
+        />
+    <Button
+        android:id="@+id/muoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Làm mới"
+        android:layout_below="@id/chin"
+        />
+
+</RelativeLayout>
